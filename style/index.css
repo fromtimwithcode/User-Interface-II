@@ -183,7 +183,7 @@ header nav a {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.7rem;
   color: white;
-  background: #4895ef;
+  background: #4cc9f0;
   border-radius: 0.4rem;
 }
 
@@ -200,8 +200,6 @@ main {
   width: 100%;
   justify-content: center;
   align-items: center;
-
-  border: 1px solid red;
 }
 
 main .intro {
@@ -210,9 +208,9 @@ main .intro {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 75%;
+  width: 60%;
   height: 30vh;
-  margin: 3rem;
+  margin-top: 5rem;
   background: #7209b7;
 }
 
@@ -226,7 +224,7 @@ h1 {
 main div button {
   margin-top: 2rem;
   color: white;
-  background: #4895ef;
+  background: #4cc9f0;
   border: none;
   border-radius: 0.5rem;
   padding: 1.5rem;
@@ -236,4 +234,162 @@ main div button {
 
 main div button:hover {
   background: #f72585;
+}
+
+/* Section -> Gallery */
+
+section {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50vh;
+}
+
+section .gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 85%;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+section .gallery .projectOne a,
+section .gallery .projectTwo a,
+section .gallery .projectThree a,
+section .gallery .projectFour a,
+section .gallery .projectFive a,
+section .gallery .projectSix a {
+  display: flex;
+  color: white;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #4cc9f0;
+}
+
+section .gallery .projectOne a:hover,
+section .gallery .projectTwo a:hover,
+section .gallery .projectThree a:hover,
+section .gallery .projectFour a:hover,
+section .gallery .projectFive a:hover,
+section .gallery .projectSix a:hover {
+  background: #f72585;
+}
+
+section .gallery .projectOne {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  background: #7209b7;
+  width: 25rem;
+  height: 25rem;
+}
+
+section .gallery .projectTwo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  background: #7209b7;
+  width: 25rem;
+  height: 25rem;
+}
+
+section .gallery .projectThree {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  background: #7209b7;
+  width: 25rem;
+  height: 25rem;
+}
+
+section .gallery .projectFour {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  background: #7209b7;
+  width: 25rem;
+  height: 25rem;
+}
+
+section .gallery .projectFive {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  background: #7209b7;
+  width: 25rem;
+  height: 25rem;
+}
+
+section .gallery .projectSix {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  background: #7209b7;
+  width: 25rem;
+  height: 25rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background: #7209b7;
+  width: 100%;
+  height: 15vh;
+  margin-top: 6.5rem;
+}
+
+footer .socialMedia {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .socialMedia img {
+  width: 3rem;
+  height: 3rem;
+}
+
+footer .contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+  width: 10%;
+  border-radius: 0.5rem;
+  background: #4cc9f0;
+  padding: 1.5rem 0.5rem;
+  margin-top: 1.5rem;
+}
+
+footer .contactButton:hover {
+  background: #f72585;
+}
+
+footer .contactButton a {
+  display: flex;
+  color: white;
+  text-decoration: none;
 }
