@@ -189,6 +189,7 @@ header nav a {
 
 header nav a:hover {
   background: #f72585;
+  transition: 1s;
 }
 
 /* Main */
@@ -234,6 +235,7 @@ main div button {
 
 main div button:hover {
   background: #f72585;
+  transition: 1s;
 }
 
 /* Section -> Gallery */
@@ -282,6 +284,7 @@ section .gallery .projectThree a:hover,
 section .gallery .projectFour a:hover,
 section .gallery .projectFive a:hover,
 section .gallery .projectSix a:hover {
+  transition: 1s;
   background: #f72585;
 }
 
@@ -290,9 +293,9 @@ section .gallery .projectOne {
   align-items: flex-end;
   justify-content: center;
   margin: 3rem 3rem;
-  background: #7209b7;
   width: 25rem;
   height: 25rem;
+  background: url(https://picsum.photos/seed/{1}/250);
 }
 
 section .gallery .projectTwo {
@@ -300,9 +303,9 @@ section .gallery .projectTwo {
   align-items: flex-end;
   justify-content: center;
   margin: 3rem 3rem;
-  background: #7209b7;
   width: 25rem;
   height: 25rem;
+  background: url(https://picsum.photos/seed/{2}/250);
 }
 
 section .gallery .projectThree {
@@ -310,9 +313,9 @@ section .gallery .projectThree {
   align-items: flex-end;
   justify-content: center;
   margin: 3rem 3rem;
-  background: #7209b7;
   width: 25rem;
   height: 25rem;
+  background: url(https://picsum.photos/seed/{3}/250);
 }
 
 section .gallery .projectFour {
@@ -320,9 +323,9 @@ section .gallery .projectFour {
   align-items: flex-end;
   justify-content: center;
   margin: 3rem 3rem;
-  background: #7209b7;
   width: 25rem;
   height: 25rem;
+  background: url(https://picsum.photos/seed/{4}/250);
 }
 
 section .gallery .projectFive {
@@ -330,9 +333,9 @@ section .gallery .projectFive {
   align-items: flex-end;
   justify-content: center;
   margin: 3rem 3rem;
-  background: #7209b7;
   width: 25rem;
   height: 25rem;
+  background: url(https://picsum.photos/seed/{5}/250);
 }
 
 section .gallery .projectSix {
@@ -340,9 +343,9 @@ section .gallery .projectSix {
   align-items: flex-end;
   justify-content: center;
   margin: 3rem 3rem;
-  background: #7209b7;
   width: 25rem;
   height: 25rem;
+  background: url(https://picsum.photos/seed/{6}/250);
 }
 
 /* Footer */
@@ -386,6 +389,7 @@ footer .contactButton {
 
 footer .contactButton:hover {
   background: #f72585;
+  transition: 1s;
 }
 
 footer .contactButton a {
