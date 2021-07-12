@@ -86,7 +86,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -104,9 +103,6 @@ menu,
 nav,
 section {
   display: block;
-}
-body {
-  line-height: 1;
 }
 ol,
 ul {
@@ -128,102 +124,96 @@ table {
   border-spacing: 0;
 }
 
-/* Font importing */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300&display=swap");
-
-/* Setting the base for easy rem usage (1.4rem = 14px) */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
 html {
   font-size: 62.5%;
 }
+body {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 7rem;
+  text-align: center;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /* Header */
-
 header {
   display: flex;
   flex-flow: row nowrap;
-  box-sizing: border-box;
   width: 100%;
-  height: 6rem;
+  height: 5vh;
   background: #7209b7;
 }
-
 header .topName {
   display: flex;
-  padding-left: 4rem;
-  width: 35%;
-  font-size: 4rem;
-}
-
-header .topName a {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  text-decoration: none;
+  padding-left: 2%;
+  width: 35%;
+  font-size: 3.5rem;
+}
+header .topName a {
   color: #4cc9f0;
   font-family: "Bebas Neue", cursive;
-  padding-top: 0.4rem;
+  padding-top: 1%;
 }
-
 header nav {
   display: flex;
-  width: 100%;
+  width: 65%;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 4rem;
+  padding-right: 2%;
 }
-
 header nav a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 15rem;
-  height: 70%;
-  margin: 0.2rem;
-  text-decoration: none;
-  font-family: "Source Sans Pro", sans-serif;
+  width: 22.5%;
+  height: 55%;
+  margin: 0.5%;
   font-size: 1.7rem;
   color: white;
   background: #4cc9f0;
   border-radius: 0.4rem;
 }
-
 header nav a:hover {
   background: #f72585;
   transition: 1s;
 }
 
 /* Main */
-
 main {
   display: flex;
   flex-flow: row nowrap;
-  box-sizing: border-box;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-
 main .intro {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  width: 60%;
+  width: 70%;
   height: 30vh;
   margin-top: 5rem;
   background: #7209b7;
 }
-
-h1 {
-  color: white;
-  font-family: "Bebas Neue", cursive;
-  font-size: 7rem;
-  text-align: center;
-}
-
 main div button {
-  margin-top: 2rem;
+  margin-top: 15%;
   color: white;
   background: #4cc9f0;
   border: none;
@@ -232,32 +222,26 @@ main div button {
   font-size: 1.6rem;
   cursor: pointer;
 }
-
 main div button:hover {
   background: #f72585;
   transition: 1s;
 }
 
 /* Section -> Gallery */
-
 section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  box-sizing: border-box;
   width: 100%;
-  height: 50vh;
 }
-
 section .gallery {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
-  width: 85%;
-  height: 100%;
-  margin-top: 3rem;
+  width: 100%;
+  margin-top: 2%;
 }
-
 section .gallery .projectOne a,
 section .gallery .projectTwo a,
 section .gallery .projectThree a,
@@ -269,15 +253,13 @@ section .gallery .projectSix a {
   width: 40%;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   font-size: 1.4rem;
-  padding: 1rem;
+  padding: 3%;
   margin-bottom: 1.5rem;
   border-radius: 0.5rem;
   font-family: "Source Sans Pro", sans-serif;
   background: #4cc9f0;
 }
-
 section .gallery .projectOne a:hover,
 section .gallery .projectTwo a:hover,
 section .gallery .projectThree a:hover,
@@ -287,7 +269,6 @@ section .gallery .projectSix a:hover {
   transition: 1s;
   background: #f72585;
 }
-
 section .gallery .projectOne {
   display: flex;
   align-items: flex-end;
@@ -297,7 +278,6 @@ section .gallery .projectOne {
   height: 25rem;
   background: url(https://picsum.photos/seed/{1}/250);
 }
-
 section .gallery .projectTwo {
   display: flex;
   align-items: flex-end;
@@ -307,7 +287,6 @@ section .gallery .projectTwo {
   height: 25rem;
   background: url(https://picsum.photos/seed/{2}/250);
 }
-
 section .gallery .projectThree {
   display: flex;
   align-items: flex-end;
@@ -317,7 +296,6 @@ section .gallery .projectThree {
   height: 25rem;
   background: url(https://picsum.photos/seed/{3}/250);
 }
-
 section .gallery .projectFour {
   display: flex;
   align-items: flex-end;
@@ -327,7 +305,6 @@ section .gallery .projectFour {
   height: 25rem;
   background: url(https://picsum.photos/seed/{4}/250);
 }
-
 section .gallery .projectFive {
   display: flex;
   align-items: flex-end;
@@ -337,7 +314,6 @@ section .gallery .projectFive {
   height: 25rem;
   background: url(https://picsum.photos/seed/{5}/250);
 }
-
 section .gallery .projectSix {
   display: flex;
   align-items: flex-end;
@@ -352,33 +328,28 @@ section .gallery .projectSix {
 
 footer {
   display: flex;
-  box-sizing: border-box;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   background: #7209b7;
   width: 100%;
-  height: 15vh;
-  margin-top: 6.5rem;
+  height: 12vh;
+  margin-top: 3%;
 }
-
 footer .socialMedia {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
-
 footer .socialMedia img {
   width: 3rem;
   height: 3rem;
 }
-
 footer .contactButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   width: 10%;
   border-radius: 0.5rem;
@@ -386,14 +357,11 @@ footer .contactButton {
   padding: 1.5rem 0.5rem;
   margin-top: 1.5rem;
 }
-
 footer .contactButton:hover {
   background: #f72585;
   transition: 1s;
 }
-
 footer .contactButton a {
   display: flex;
   color: white;
-  text-decoration: none;
 }
