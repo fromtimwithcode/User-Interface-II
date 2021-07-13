@@ -1,1 +1,422 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 7rem;
+  text-align: center;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  background: #7209b7;
+}
+header .topName {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  width: 35%;
+  font-size: 3.5rem;
+}
+header .topName a {
+  color: #4cc9f0;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 1%;
+}
+header nav {
+  display: flex;
+  width: 65%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2%;
+}
+header nav a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 22.5%;
+  height: 55%;
+  margin: 0.5%;
+  font-size: 1.7rem;
+  color: white;
+  background: #4cc9f0;
+  border-radius: 0.4rem;
+}
+header nav a:hover {
+  background: #f72585;
+  transition: 1s;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+main .intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 30vh;
+  margin-top: 5rem;
+  background: #7209b7;
+}
+main div button {
+  margin-top: 15%;
+  color: white;
+  background: #4cc9f0;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+main div button:hover {
+  background: #f72585;
+  transition: 1s;
+}
+
+/* Section -> Gallery */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.container .gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 2%;
+}
+.projectOne a,
+.projectTwo a,
+.projectThree a,
+.projectFour a,
+.projectFive a,
+.projectSix a {
+  display: flex;
+  color: white;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 3%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #4cc9f0;
+}
+.projectOne a:hover,
+.projectTwo a:hover,
+.projectThree a:hover,
+.projectFour a:hover,
+.projectFive a:hover,
+.projectSix a:hover {
+  transition: 1s;
+  background: #f72585;
+}
+.projectOne {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  width: 25rem;
+  height: 25rem;
+  background: url(https://picsum.photos/seed/{1}/250);
+}
+.projectTwo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  width: 25rem;
+  height: 25rem;
+  background: url(https://picsum.photos/seed/{2}/250);
+}
+.projectThree {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  width: 25rem;
+  height: 25rem;
+  background: url(https://picsum.photos/seed/{3}/250);
+}
+.projectFour {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  width: 25rem;
+  height: 25rem;
+  background: url(https://picsum.photos/seed/{4}/250);
+}
+.projectFive {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  width: 25rem;
+  height: 25rem;
+  background: url(https://picsum.photos/seed/{5}/250);
+}
+.projectSix {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3rem 3rem;
+  width: 25rem;
+  height: 25rem;
+  background: url(https://picsum.photos/seed/{6}/250);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #7209b7;
+  width: 100%;
+  height: 12vh;
+  margin-top: 3%;
+}
+.socialMedia {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.socialMedia img {
+  width: 3rem;
+  height: 3rem;
+}
+.contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  width: 15%;
+  border-radius: 0.5rem;
+  background: #4cc9f0;
+  padding: 1.5rem 0.5rem;
+  margin-top: 1.5rem;
+}
+.contactButton:hover {
+  background: #f72585;
+  transition: 1s;
+}
+.contactButton a {
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  header {
+    flex-flow: column wrap;
+    align-content: center;
+    background: white;
+  }
+  header .topName {
+    justify-content: center;
+    align-content: center;
+    padding: 0%;
+    width: 100%;
+  }
+  header nav {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 0%;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  main .intro {
+    width: 80%;
+    height: 20vh;
+    margin-top: 2rem;
+  }
+  main div button {
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+  main div button {
+    font-size: 1.4rem;
+    padding: 0.9rem;
+  }
+  .projectOne,
+  .projectTwo,
+  .projectThree,
+  .projectFour,
+  .projectFive,
+  .projectSix {
+    width: 15rem;
+    height: 15rem;
+  }
+  footer {
+    height: 15vh;
+  }
+  .contactButton {
+    width: 25%;
+  }
+}
